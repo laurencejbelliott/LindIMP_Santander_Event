@@ -22,7 +22,7 @@ def pass_pen():
     goal.target_pose.pose.position.y = 9.36499023438
 
     goal.target_pose.pose.orientation.z = 0.464598051694
-    goal.target_pose.pose.orientation.z = 0.885521682604
+    goal.target_pose.pose.orientation.w = 0.885521682604
 
     client.send_goal(goal)
     print("Goal sent")
@@ -32,8 +32,6 @@ def pass_pen():
     if result == "Goal reached.":
         speakPub.publish(goodbyeMsg)
         print(goodbyeText)
-
-    rospy.spin()
 
 
 if __name__ == "__main__":
