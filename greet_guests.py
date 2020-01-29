@@ -8,7 +8,7 @@ speakPub = rospy.Publisher("speak/goal", maryttsActionGoal, queue_size=1)
 
 
 def callback(data):
-    greetStr = "Hello, and welcome to the Santander signing event!"
+    greetStr = "Hello, and welcome to the Santanderr signing event!"
     greetMsg = maryttsActionGoal()
     greetMsg.goal.text = greetStr
     speakPub.publish(greetMsg)
