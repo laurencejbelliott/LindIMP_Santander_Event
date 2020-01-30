@@ -18,11 +18,11 @@ def pass_pen():
     goal = MoveBaseGoal()
     goal.target_pose.header.frame_id = "map"
     goal.target_pose.header.stamp = rospy.Time.now()
-    goal.target_pose.pose.position.x = 3.21621990722
-    goal.target_pose.pose.position.y = 4.05145543785
+    goal.target_pose.pose.position.x = 3.36976957321
+    goal.target_pose.pose.position.y = 4.25985527039
 
-    goal.target_pose.pose.orientation.z = 0.363511820722
-    goal.target_pose.pose.orientation.w = 0.931589585706
+    goal.target_pose.pose.orientation.z = 0.296989783605
+    goal.target_pose.pose.orientation.w = 0.954880656645
 
     client.send_goal(goal)
     print("Goal sent")
