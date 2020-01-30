@@ -6,7 +6,8 @@ from mary_tts.msg import maryttsActionGoal
 
 speakPub = rospy.Publisher("speak/goal", maryttsActionGoal, queue_size=1)
 goodbyeMsg = maryttsActionGoal()
-goodbyeText = "Please take a pen to sign the Santanderr contract!"
+goodbyeText = "Please take a pen to sign the Santanderr contract! " \
+              "Please take the basket if you cannot reach."
 goodbyeMsg.goal.text = goodbyeText
 
 
