@@ -11,11 +11,11 @@ def leave_pens():
     goal = MoveBaseGoal()
     goal.target_pose.header.frame_id = "map"
     goal.target_pose.header.stamp = rospy.Time.now()
-    goal.target_pose.pose.position.x = -10.0207271576
-    goal.target_pose.pose.position.y = 4.48201179504
+    goal.target_pose.pose.position.x = 5.70100021362
+    goal.target_pose.pose.position.y = -2.89500021935
 
-    goal.target_pose.pose.orientation.z = 0.592835439459
-    goal.target_pose.pose.orientation.w = 0.805323625458
+    goal.target_pose.pose.orientation.z = -0.966442346438
+    goal.target_pose.pose.orientation.w = 0.256883613747
 
     client.send_goal(goal)
     print("Goal sent")
